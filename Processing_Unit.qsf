@@ -1,0 +1,223 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2016  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Intel and sold by Intel or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+# Date created = 22:07:10  April 30, 2017
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Processing_Unit_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY CPU
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 16.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:07:10  APRIL 30, 2017"
+set_global_assignment -name LAST_QUARTUS_VERSION "16.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name VERILOG_FILE ALU.v
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name VERILOG_FILE Data_Memory.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_global_assignment -name VERILOG_FILE Data_Registers.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2.vwf
+set_global_assignment -name VERILOG_FILE Memory_Registers.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform5.vwf
+set_global_assignment -name VERILOG_FILE Cycle_Generator.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform8.vwf
+set_global_assignment -name VERILOG_FILE Sign_Extend_Shift_Left_2.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform10.vwf
+set_global_assignment -name VERILOG_FILE Mux3.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform11.vwf
+set_global_assignment -name VERILOG_FILE Instruction_Memory.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform12.vwf
+set_global_assignment -name VERILOG_FILE Program_Counter.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform13.vwf
+set_global_assignment -name VERILOG_FILE CPU.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform14.vwf
+set_global_assignment -name VERILOG_FILE Sign_Extend_Operands.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform15.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform16.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform17.vwf
+set_global_assignment -name VERILOG_FILE Mux5.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform18.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform19.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform20.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform21.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform22.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform23.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform24.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform25.vwf
+set_global_assignment -name VERILOG_FILE Input.v
+set_global_assignment -name VERILOG_FILE Mux6.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform26.vwf
+set_global_assignment -name VERILOG_FILE BCD_Converter.v
+set_global_assignment -name VERILOG_FILE Display7seg.v
+set_global_assignment -name VERILOG_FILE Output.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform27.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform28.vwf
+set_global_assignment -name VERILOG_FILE Control_Unit.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform29.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform30.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform31.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform32.vwf
+set_global_assignment -name VERILOG_FILE Debouncer.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform33.vwf
+set_location_assignment PIN_AD26 -to data_keys[6]
+set_location_assignment PIN_AC26 -to data_keys[5]
+set_location_assignment PIN_AB27 -to data_keys[4]
+set_location_assignment PIN_AD27 -to data_keys[3]
+set_location_assignment PIN_AC27 -to data_keys[2]
+set_location_assignment PIN_AC28 -to data_keys[1]
+set_location_assignment PIN_AB28 -to data_keys[0]
+set_location_assignment PIN_Y23 -to reset
+set_location_assignment PIN_Y2 -to clk
+set_location_assignment PIN_Y24 -to halt_key_in
+set_location_assignment PIN_Y19 -to out_tens_3[6]
+set_location_assignment PIN_AF23 -to out_tens_3[5]
+set_location_assignment PIN_AD24 -to out_tens_3[4]
+set_location_assignment PIN_AA21 -to out_tens_3[3]
+set_location_assignment PIN_AB20 -to out_tens_3[2]
+set_location_assignment PIN_U21 -to out_tens_3[1]
+set_location_assignment PIN_V21 -to out_tens_3[0]
+set_location_assignment PIN_AH18 -to out_tens_2[6]
+set_location_assignment PIN_AF18 -to out_tens_2[5]
+set_location_assignment PIN_AG19 -to out_tens_2[4]
+set_location_assignment PIN_AH19 -to out_tens_2[3]
+set_location_assignment PIN_AB18 -to out_tens_2[2]
+set_location_assignment PIN_AC18 -to out_tens_2[1]
+set_location_assignment PIN_AD18 -to out_tens_2[0]
+set_location_assignment PIN_AE18 -to out_ones_2[6]
+set_location_assignment PIN_AF19 -to out_ones_2[5]
+set_location_assignment PIN_AE19 -to out_ones_2[4]
+set_location_assignment PIN_AH21 -to out_ones_2[3]
+set_location_assignment PIN_AG21 -to out_ones_2[2]
+set_location_assignment PIN_AA19 -to out_ones_2[1]
+set_location_assignment PIN_AB19 -to out_ones_2[0]
+set_location_assignment PIN_AA14 -to out_tens_1[6]
+set_location_assignment PIN_AG18 -to out_tens_1[5]
+set_location_assignment PIN_AF17 -to out_tens_1[4]
+set_location_assignment PIN_AH17 -to out_tens_1[3]
+set_location_assignment PIN_AG17 -to out_tens_1[2]
+set_location_assignment PIN_AE17 -to out_tens_1[1]
+set_location_assignment PIN_AD17 -to out_tens_1[0]
+set_location_assignment PIN_AC17 -to out_ones_1[6]
+set_location_assignment PIN_AA15 -to out_ones_1[5]
+set_location_assignment PIN_AB15 -to out_ones_1[4]
+set_location_assignment PIN_AB17 -to out_ones_1[3]
+set_location_assignment PIN_AA16 -to out_ones_1[2]
+set_location_assignment PIN_AB16 -to out_ones_1[1]
+set_location_assignment PIN_AA17 -to out_ones_1[0]
+set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS ON
+set_global_assignment -name NUM_PARALLEL_PROCESSORS 2
+set_global_assignment -name FITTER_EFFORT "FAST FIT"
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform34.vwf
+set_location_assignment PIN_G20 -to c
+set_location_assignment PIN_H21 -to d
+set_location_assignment PIN_G19 -to PC_test[0]
+set_location_assignment PIN_F19 -to PC_test[1]
+set_location_assignment PIN_E19 -to PC_test[2]
+set_location_assignment PIN_F21 -to PC_test[3]
+set_location_assignment PIN_F18 -to PC_test[4]
+set_location_assignment PIN_E18 -to PC_test[5]
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform35.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform36.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform37.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform38.vwf
+set_global_assignment -name VERILOG_FILE IOButton.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform39.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform40.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform41.vwf
+set_global_assignment -name VERILOG_FILE ClockDivisor.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform42.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform43.vwf
+set_location_assignment PIN_J19 -to PC_test[6]
+set_location_assignment PIN_H19 -to PC_test[7]
+set_location_assignment PIN_R24 -to button_io
+set_global_assignment -name CDF_FILE output_files/Chain1.cdf
+set_location_assignment PIN_E22 -to reset_t
+set_location_assignment PIN_E21 -to button_io_t
+set_location_assignment PIN_M23 -to button_in
+set_location_assignment PIN_F17 -to clock_div_t
+set_location_assignment PIN_E24 -to out_t
+set_location_assignment PIN_H22 -to PC_ones_out[6]
+set_location_assignment PIN_J22 -to PC_ones_out[5]
+set_location_assignment PIN_L25 -to PC_ones_out[4]
+set_location_assignment PIN_L26 -to PC_ones_out[3]
+set_location_assignment PIN_E17 -to PC_ones_out[2]
+set_location_assignment PIN_F22 -to PC_ones_out[1]
+set_location_assignment PIN_G18 -to PC_ones_out[0]
+set_location_assignment PIN_U24 -to PC_tens_out[6]
+set_location_assignment PIN_U23 -to PC_tens_out[5]
+set_location_assignment PIN_W25 -to PC_tens_out[4]
+set_location_assignment PIN_W22 -to PC_tens_out[3]
+set_location_assignment PIN_W21 -to PC_tens_out[2]
+set_location_assignment PIN_Y22 -to PC_tens_out[1]
+set_location_assignment PIN_M24 -to PC_tens_out[0]
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform222.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/Waveform.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform44.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/Waveform1.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/Waveform2.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform223.vwf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_AA25 -to PC_hundreds_out[0]
+set_location_assignment PIN_AA26 -to PC_hundreds_out[1]
+set_location_assignment PIN_Y25 -to PC_hundreds_out[2]
+set_location_assignment PIN_W26 -to PC_hundreds_out[3]
+set_location_assignment PIN_Y26 -to PC_hundreds_out[4]
+set_location_assignment PIN_W27 -to PC_hundreds_out[5]
+set_location_assignment PIN_W28 -to PC_hundreds_out[6]
+set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/Waveform3.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform224.vwf
+set_location_assignment PIN_J17 -to PC_test[8]
+set_location_assignment PIN_G17 -to PC_test[9]
+set_location_assignment PIN_J15 -to PC_test[10]
+set_location_assignment PIN_H16 -to PC_test[11]
+set_location_assignment PIN_J16 -to PC_test[12]
+set_location_assignment PIN_H17 -to PC_test[13]
+set_location_assignment PIN_F15 -to PC_test[14]
+set_location_assignment PIN_G15 -to PC_test[15]
+set_location_assignment PIN_G21 -to a
+set_location_assignment PIN_G22 -to b
+set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/Waveform4.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform225.vwf
+set_global_assignment -name CDF_FILE output_files/Chain2.cdf
+set_global_assignment -name CDF_FILE output_files/Chain3.cdf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
