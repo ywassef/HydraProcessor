@@ -23,15 +23,7 @@ module Data_Memory (bneg, d, mem_read, mem_write, read_address1, read_address2, 
 	
 	 always@(posedge d)					//ciclo de escrita
 		begin
-			if (reset) begin			// inicializando a memoria
-				for (i = 0; i < 49; i = i + 1) 
-						memory[i] = 0;
-				
-				//caso teste
-				//memory[23] = 5;
-			end
-			
-			else if (mem_write)					//escrita habilitada
+			if (mem_write)					//escrita habilitada
 				begin
 					memory[write_address] = write_data;
 				end

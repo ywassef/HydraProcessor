@@ -5,29 +5,13 @@ module Instruction_Memory (PC, a, out1, out2, reset);
 	
 	output reg [15:0] out1, out2;				//saida da instrução em duas partes: out1 = opcode, optype e op1 / out2 = op2 e op3
 	
-	reg [15:0] inst_memory [0:609];			//declaracao de memoria - cabe 40 instruções para teste
-	integer i;
+	reg [15:0] inst_memory [0:609];			//declaracao de memoria - cabe 40 instruções para teste;
 	
-	always@(reset==1)											// inicializando a memoria com todas as posições contendo nop
-		begin
-			
-						
-		end
-			
-
 	always@(posedge a)							//ciclo de instruction fetch é no posedge do a
 		begin
 		
 			if (reset) begin
-				
-				for (i = 0; i < 609; i = i + 1) begin
-					if (i % 2 == 0)
-						inst_memory[i] = 16'B1111000000000000;		//Cada instrução ocupa duas posições de memória.
-					else														//Logo, para colocar nops, preciso colocar a primeira e a segunda parte separado
-						inst_memory[i] = 0;
-				end
-				
-				
+			
 				 //escrever as instruções manualmente aqui
 				 
 				//-------------------------------------------------------------------------
@@ -260,7 +244,7 @@ module Instruction_Memory (PC, a, out1, out2, reset);
 				
 				//-------------------------------------------------------------
 				
-								//mov r31, -1
+				//mov r31, -1
 				inst_memory[0] = 16'B1100010000011111;
 				inst_memory[1] = 16'B1111111111111111;
 
@@ -1463,9 +1447,6 @@ module Instruction_Memory (PC, a, out1, out2, reset);
 				//
 				inst_memory[600] = 16'B1111100000000000;
 				inst_memory[601] = 0;
-
-
-				
 				
 			end
 				
