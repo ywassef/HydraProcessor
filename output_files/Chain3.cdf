@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE115F29) Path("C:/Users/Yasmin/Faculdade/5o semestre/Lab AOC/Processador/output_files/") File("Processing_Unit.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE115F29) Path("C:/Users/Yasmin/Faculdade/8o semestre/Lab SO/Processador/output_files/") File("Processing_Unit.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

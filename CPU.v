@@ -104,7 +104,7 @@ module CPU (clk, reset, button_in, halt_key_in, data_keys, data_reg_read_t, data
 		mem_reg_read_t = mem_reg_read; mem_reg_write_t = mem_reg_write;
 		mem_read_t = mem_read; mem_write_t = mem_write;
 		op1src_t = op1src; op2src_t = op2src; out_data_src_t = out_data_src;
-		write_data_src_t = write_data_src; jump_t = jump; out_t = out;
+		write_data_src_t = write_data_src; out_t = out;
 		
 	end
 	
@@ -205,6 +205,10 @@ module CPU (clk, reset, button_in, halt_key_in, data_keys, data_reg_read_t, data
 	assign imm_jump = (opcode == 5'B01110) || (opcode == 5'B01111) ? rg_1 : imm_mux5;
 	
 	assign jump_control = opcode == 5'B01111 && rg_2 == 0 ? 1 : jump;
+	
+	always@(*) begin 
+		jump_t = jump_control;
+	end
 
 	assign mem_reg_value = mem_address1;
 	
